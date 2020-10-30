@@ -8,7 +8,8 @@ const QuestionSchema = new Schema({
         required: true
     },
     incorrect: {
-        type: Array,
+        type: [String],
+        default: undefined,
         required: true
     },
     correct: {

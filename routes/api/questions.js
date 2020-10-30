@@ -31,9 +31,9 @@ router.post('/', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-    Question.find()
-        .then(questions => res.json(questions))
-        .catch(err => res.status(404).json({ notweetsfound: 'No questions found' }));
+    Question.findOneAndDelete({ id: req.id })
+        .then((question) => res.json(question))
+        .catch((err) => res.json(err));
 });
 
 
