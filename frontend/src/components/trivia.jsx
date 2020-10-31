@@ -14,12 +14,13 @@ class Trivia extends React.Component {
         this.props.fetchQuestions();
     }
 
-    questionHandler(arg){
-        debugger;
-        this.setState({
-            question: this.state.question+1,
-            score: this.state.score+1
-        })
+    questionHandler(c){
+        if(c==='correct'){
+            this.setState({question: this.state.question + 1, score: this.state.score + 1})
+        }else{
+            this.setState({ question: this.state.question + 1 })
+        }
+        
     }
 
     quit(e){
@@ -28,6 +29,14 @@ class Trivia extends React.Component {
     }
 
     render() {
+
+        if(this.state.question===10){
+            this.props.history.push({
+                pathname: '/results',
+                state: {score: this.state.score}
+            });
+        }
+        debugger;
         const questions = this.props.questions.map((q) => <Question handler={this.questionHandler} id={q.id} q={q}/>) 
         return (
             <div className="main-trivia">
@@ -36,7 +45,8 @@ class Trivia extends React.Component {
                     <h2>Quit</h2>
                 </div>
                 <div className="trivia-question-container">
-                    {questions[0]}
+                    <h2 className="trivia-question-number">Q{this.state.question+1}:</h2>
+                    {questions[this.state.question]}
                 </div>
             </div>
         );

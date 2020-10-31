@@ -12,17 +12,17 @@ class Question extends React.Component{
     updateChoice(answer, idx){
         debugger;
         this.setState({ selected: idx, answer: answer });
-        
     }
 
     submitAnswer(e){
         e.preventDefault()
         if(this.state.answer){
             if(this.props.q.correct === this.state.answer){
-                // show answer, increment score, next question
+                this.props.handler('correct')
             }else{
-                // show answer, next question
+                this.props.handler('incorrect')
             }
+            this.setState({selected: null, answer: null});
         }else{
             alert('You must select an answer before submitting!!')
         }

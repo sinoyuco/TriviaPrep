@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import {fetchQuestions} from '../actions/question_actions';
 import Trivia from './trivia';
 
-const mSTP= (state) => {
+const mSTP = (state) => {
+    debugger;
     return {
         questions: Object.values(state.questions)
     }

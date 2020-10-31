@@ -5,8 +5,11 @@ const Question = require('../../models/Question');
 
 router.get('/', (req, res) => {
     Question.find()
-        .then(questions => res.json(questions))
-        .catch(err => res.status(404).json({ nonefound: 'No questions found' }));
+        .then(questions =>{ 
+            let allqs = Object.values(questions).sort(() => 0.5 - Math.random());
+            let selected_qs = allqs.slice(0,10);
+            return res.json(selected_qs);
+        }).catch(err => res.status(404).json({ nonefound: 'No questions found' }));
 });
 
 

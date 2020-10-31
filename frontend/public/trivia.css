@@ -67,3 +67,7 @@
     cursor: pointer;
     border-color: rgb(139, 241, 139);
 }
+
+.trivia-question-number{
+    text-align: center;
+}
