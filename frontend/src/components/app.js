@@ -5,11 +5,13 @@ import Landing from './layers/landing';
 import TriviaContainer from './trivia_container';
 import Results from './layers/results';
 import { Switch, Route} from 'react-router-dom';
+import Modal from './layers/modal';
 
 
 const App = () => (
     <div className="app-main">
         <Header/>
+        <Modal/>
         <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path="/trivia" component={TriviaContainer} />

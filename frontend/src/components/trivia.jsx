@@ -14,10 +14,16 @@ class Trivia extends React.Component {
         this.props.fetchQuestions();
     }
 
-    questionHandler(c){
+    questionHandler(c, a){
         if(c==='correct'){
+            //open correct modal
+            this.props.openModal('correct')
+            //setstate to next q
             this.setState({question: this.state.question + 1, score: this.state.score + 1})
         }else{
+            //open incorrect modal
+            this.props.openModal('incorrect', a)
+            //setstate to next q
             this.setState({ question: this.state.question + 1 })
         }
         
@@ -36,7 +42,6 @@ class Trivia extends React.Component {
                 state: {score: this.state.score}
             });
         }
-        debugger;
         const questions = this.props.questions.map((q) => <Question handler={this.questionHandler} id={q.id} q={q}/>) 
         return (
             <div className="main-trivia">

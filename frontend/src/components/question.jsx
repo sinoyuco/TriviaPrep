@@ -10,7 +10,6 @@ class Question extends React.Component{
     }
 
     updateChoice(answer, idx){
-        debugger;
         this.setState({ selected: idx, answer: answer });
     }
 
@@ -20,7 +19,7 @@ class Question extends React.Component{
             if(this.props.q.correct === this.state.answer){
                 this.props.handler('correct')
             }else{
-                this.props.handler('incorrect')
+                this.props.handler('incorrect', this.props.q.correct)
             }
             this.setState({selected: null, answer: null});
         }else{
@@ -30,7 +29,6 @@ class Question extends React.Component{
 
     render(){
         const {q} = this.props
-        debugger;
 
         let options = q.incorrect.concat([q.correct]).sort();
 

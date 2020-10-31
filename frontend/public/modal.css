@@ -1,0 +1,81 @@
+.incorrect-modal-main{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    border: 4px solid #CD5E77;
+    background-color: #F4C2C2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.incorrect-modal-title{
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+    color: red;
+}
+
+.incorrect-modal-answer{
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.incorrect-modal-answer-2{
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: red
+}
+
+.incorrect-modal-close{
+    width: 40%;
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+    margin: 0 auto;
+    border: 4px solid white;
+    border-radius: 5px;
+    background-color: #CD5E77;
+    color: black;
+}
+
+.incorrect-modal-close:hover{
+    cursor: pointer;
+    border-color: lightgreen;
+}
+
+
+
+
+.correct-modal-main{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    border: 4px solid #CD5E77;
+    background-color: #F4C2C2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.correct-modal-title{
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+    color: green;
+}
+
+.correct-modal-close{
+    width: 40%;
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+    margin: 0 auto;
+    border: 4px solid white;
+    border-radius: 5px;
+    background-color: #CD5E77;
+    color: black;
+}
+
+.correct-modal-close:hover{
+    cursor: pointer;
+    border-color: lightgreen;
+}
