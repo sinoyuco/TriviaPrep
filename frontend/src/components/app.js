@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './layers/header';
 import Footer from './layers/footer';
 import Landing from './layers/landing';
-import Trivia from './trivia';
+import TriviaContainer from './trivia_container';
 import { Switch, Route} from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ const App = () => (
         <Header/>
         <Switch>
             <Route exact path="/" component={Landing} />
-            <Route exact path="/trivia" component={Trivia} />
+            <Route exact path="/trivia" component={TriviaContainer} />
         </Switch>
         <Footer/>
     </div>

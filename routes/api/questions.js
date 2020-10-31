@@ -10,17 +10,13 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/sample', (req, res) => {
-    Question.find()
-        .then(questions => res.json(questions))
-        .catch(err => res.status(404).json({ notweetsfound: 'No questions found' }));
-});
-
 router.post('/', (req, res) => {
+
+    console.log(req.body.incorrect)
 
     const newquestion = new Question({
         question: req.body.question,
-        incorrect: req.body.incorrect,
+        incorrect: JSON.parse(req.body.incorrect),
         correct: req.body.correct
     });
 

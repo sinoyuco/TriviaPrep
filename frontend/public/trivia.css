@@ -1,0 +1,69 @@
+.question-main{
+
+}
+
+.question-prompt{
+   margin: 20px auto 50px auto;
+}
+
+.question-prompt h2{
+   text-align: center;
+}
+
+.answers-main{
+    
+}
+
+.answers-top{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.answers-bot{
+    display: flex;
+}
+
+.answers-submit{
+    display: flex;
+    border: 4px solid blue;
+    padding: 10px;
+    width: 110px;
+    border-radius: 5px;
+    margin: 40px auto 20px auto;
+}
+
+.answers-submit:hover{
+    cursor: pointer;
+    
+}
+
+.answers-submit h2:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.answers-option-button{
+    width: 15%;
+    min-height: 60px;
+    border-radius: 5px;
+    background-color: #CD5E77;
+    color: black;
+    margin: 0 auto;
+    border: 4px solid white;
+    font-family: 'Fredoka One', cursive;
+    outline-color: darkgreen;
+}
+
+
+.activeb{
+    border-color: darkgreen;
+    text-decoration: underline;
+    background-color: rgb(139, 241, 139);
+}
+
+.answers-option-button:hover{
+    cursor: pointer;
+    border-color: rgb(139, 241, 139);
+}
