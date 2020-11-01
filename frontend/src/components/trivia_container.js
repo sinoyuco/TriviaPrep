@@ -4,7 +4,6 @@ import {openModal, closeModal} from '../actions/modal_actions';
 import Trivia from './trivia';
 
 const mSTP = (state) => {
-    debugger;
     return {
         questions: Object.values(state.questions)
     }

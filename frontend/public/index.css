@@ -45,6 +45,12 @@
     text-align: center;
 }
 
+.main-landing h1{
+    font-family: 'Reglisse', cursive;
+    font-size: 60px;
+    color: rgb(203, 31, 186);
+}
+
 .main-trivia{
     min-height: 500px;
     height: 80%;
@@ -90,6 +96,12 @@ p,h1,h2,h3{
 
 .main-results h1{
     text-align: center;
+}
+
+.main-results-logo{
+    font-family: 'Reglisse', cursive;
+    font-size: 60px;
+    color: rgb(203, 31, 186);
 }
 
 .main-results h2{

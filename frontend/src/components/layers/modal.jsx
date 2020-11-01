@@ -5,7 +5,6 @@ import CorrectModal from './correct_modal';
 import IncorrectModal from './incorrect_modal';
 
 function Modal({ modal, closeModal }) {
-    debugger;
     if (!modal) {
         return null;
     }
