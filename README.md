@@ -6,4 +6,4 @@ TriviaPrep is a web application built to help you study for trivia.
 
 TriviaPrep was built using MongoDB, Express.js, React and Node.js.
 
-![TriviaPrep](https://hiptrip-aa-seed.s3.amazonaws.com/triviapreplong.gif)
+![TriviaPrep](https://media.giphy.com/media/C2mXtpZvpk1gFPW9ug/giphy.gif)
