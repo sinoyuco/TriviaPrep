@@ -36,7 +36,7 @@
 }
 
 .main-landing{
-    min-height: 600px;
+    min-height: 550px;
     height: 80%;
     background-color: #F4C2C2;
     display: flex;
@@ -52,7 +52,7 @@
 }
 
 .main-trivia{
-    min-height: 600px;
+    min-height: 550px;
     height: 80%;
     background-color: #F4C2C2
     
@@ -85,7 +85,7 @@ p,h1,h2,h3{
 }
 
 .main-results{
-    min-height: 600px;
+    min-height: 550px;
     height: 80%;
     background-color: #F4C2C2;
     display: flex;
